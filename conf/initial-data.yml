@@ -1,0 +1,37 @@
+## YAML Template.
+---
+# Test data
+
+BabyName(girl1):
+  name: Girl 1
+  girl: true
+
+BabyName(girl2):
+  name: Girl 2
+  girl: true
+BabyName(girl3):
+  name: Girl 3
+  girl: true
+BabyName(girl4):
+  name: Girl 4
+  girl: true
+BabyName(girl5):
+  name: Girl 5
+  girl: true
+
+BabyName(boy1):
+  name: Boy1
+  girl: false
+BabyName(boy2):
+  name: Boy2
+  girl: false
+BabyName(boy3):
+  name: Boy3
+  girl: false
+BabyName(boy4):
+  name: Boy4
+  girl: false
+BabyName(boy5):
+  name: Boy5
+  girl: false
+
