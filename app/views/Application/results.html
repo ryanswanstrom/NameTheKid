@@ -2,33 +2,38 @@
 #{set title:'Name The Kid - Results' /}
 
 <div id="names">
-<div id="boys">
+    <div id="boys">
 
-<h2>Boys Results</h2>
+        <h2>Boys Results</h2>
 
-<ul>
-#{list items:boys, as:'boy'}
-<li>
-    <div>
-    <span id="kid_name">${boy.name}</span> ${boy.totalVotes()}
+        <ul>
+            #{list items:boys, as:'boy'}
+            <li>
+                <div id="kid_name">
+                    <span id="kid_more">${boy.name}</span> 
+                    <span id="kid_vote">${boy.totalVotes()}</span>
+                </div>
+            </li>
+            #{/list}
+        </ul>
     </div>
-</li>
-#{/list}
-</ul>
-</div>
 
-<div id="girls">
+    <div id="girls">
 
-<h2>Girls Results</h2>
-<ul>
-#{list items:girls, as:'girl'}
-<li>
-    <div>
-    <span id="kid_name">${girl.name} </span> ${girl.totalVotes()}
+        <h2>Girls Results</h2>
+        <ul>
+            #{list items:girls, as:'girl'}
+            <li>
+                <div id="kid_name">
+                    <span id="kid_more">${girl.name} </span> 
+                    <span id="kid_vote">${girl.totalVotes()}</span>
+                </div>
+            </li>
+            #{/list}
+        </ul>
     </div>
-</li>
-#{/list}
-</ul>
-</div>
+    <div id="both">&nbsp</div>
+
+    <center><a href="@{Application.index}">Vote Again</a></center>
 
 </div>

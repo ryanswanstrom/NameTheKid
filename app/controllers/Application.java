@@ -2,6 +2,7 @@ package controllers;
 
 import java.util.List;
 import models.BabyName;
+import models.Vote;
 import play.mvc.*;
 
 public class Application extends Controller {
@@ -24,4 +25,18 @@ public class Application extends Controller {
         render(boys, girls);
     }
 
+    public static void about() {
+        render();
+    }
+
+    // below here added for testing with lots of data
+    public static void load() {
+        render();
+    }
+
+    public static void addRandom(int num, int commitNum) {
+//        Vote.addRandom(num, commitNum, request.remoteAddress);
+        results();
+    }
+     
 }

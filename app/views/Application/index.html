@@ -9,8 +9,8 @@
             #{list items:boys, as:'boy'}
             <li>
                 #{form @Application.addVote(boy.id)}
-                <div>
-                    <span id="kid_name">${boy.name} </span>
+                <div id="kid_name">
+                    <span id="kid_more">${boy.name} </span>
                     <input class="boy_button" type="submit" value="Vote" />
                 </div>
                 #{/form}
@@ -26,8 +26,8 @@
             #{list items:girls, as:'girl'}
             <li>
                 #{form @Application.addVote(girl.id)}
-                <div>
-                    <span id="kid_name">${girl.name}</span>
+                <div id="kid_name">
+                    <span id="kid_more">${girl.name}</span>
                     <input class="girl_button" type="submit" value="Vote" />
                 </div>
                 #{/form}
@@ -35,7 +35,10 @@
             #{/list}
         </ul>
     </div>
+    <div id="both">&nbsp</div>
 </div>
 
-<p> This is very unscientific.  You can vote as many times as you
-    like.  In fact, you are encouraged to vote more than once. </p>
+<p> We are expecting another baby, and the older children
+    have some suggestions for names.  Please vote for a
+    name.  You can vote more than once.  If fact, you are
+    encouraged to vote multiple times.</p>
