@@ -3,35 +3,35 @@
 # Test data
 
 BabyName(girl1):
-  name: Girl 1
+  name: Abby
   girl: true
 
 BabyName(girl2):
-  name: Girl 2
+  name: Abigail
   girl: true
 BabyName(girl3):
-  name: Girl 3
+  name: Bella
   girl: true
 BabyName(girl4):
-  name: Girl 4
+  name: Annabelle
   girl: true
 BabyName(girl5):
-  name: Girl 5
+  name: Elsie
   girl: true
 
 BabyName(boy1):
-  name: Boy1
+  name: Alex
   girl: false
 BabyName(boy2):
-  name: Boy2
+  name: Porter
   girl: false
 BabyName(boy3):
-  name: Boy3
+  name: Max
   girl: false
 BabyName(boy4):
-  name: Boy4
+  name: Timothy
   girl: false
 BabyName(boy5):
-  name: Boy5
+  name: Superboy
   girl: false
 
